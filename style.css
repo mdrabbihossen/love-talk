@@ -6,6 +6,8 @@ body {
   background-image: url(images/heart.jpg);
   background-attachment: scroll;
   font-family: "Montserrat", sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 /* box where contains elements  */
 .box {
@@ -45,7 +47,7 @@ body {
     transform: scale(1);
   }
 }
- /* images under the box  */
+/* images under the box  */
 .box img {
   width: 100px;
 }
@@ -56,3 +58,17 @@ body {
   margin: 5px;
 }
 
+@media screen and (max-width: 768px) {
+  .box {
+    width: 70%;
+  }
+  .box img {
+    width: 80px;
+  }
+  .box h3 {
+    font-size: 25px;
+  }
+  .quote {
+    font-size: 14px;
+  }
+}
